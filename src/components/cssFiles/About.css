@@ -1,0 +1,217 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #000;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 80px 0px 80px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.about-card {
+    display: flex;
+    background-color: #4b2e00;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+}
+
+.about-image {
+    position: relative;
+    width: 39%;
+    min-width: 290px;
+    aspect-ratio: 3 / 4;
+    display: flex;
+    align-items: stretch;
+    background: transparent;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-overlay {
+    display: none;
+}
+
+.about-info {
+    padding: 40px 100px 40px 80px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-info h1 {
+    margin: 0 0 25px 0;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.about-info p {
+    margin: 0 0 15px 0;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+.MoreInfo {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: rgba(13, 13, 13, 0.07);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 150px;
+    font-size: 1rem;
+}
+
+.MoreInfo:hover {
+    box-shadow: 0 0 15px white;
+}
+
+/* Responsive at 1120px - switch to overlay and hide side text */
+@media (max-width: 1120px) {
+    .about-card {
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        flex-direction: column;
+        min-height: auto;
+        width: 400px;
+    }
+
+    .about-image {
+        width: 100%;
+        min-width: 0;
+        aspect-ratio: 3 / 4;
+        height: 580px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .about-overlay {
+        /* Show overlay */
+        display: flex;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        /* Gradient: strong black bottom-left fading to transparent top-right */
+        background: linear-gradient(to top right,
+                rgba(0, 0, 0, 0.95) 10%,
+                rgba(0, 0, 0, 0.5) 50%,
+                rgba(0, 0, 0, 0) 90%);
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .about-overlay-info {
+        color: white;
+        padding: 40px 32px;
+        width: 100%;
+        pointer-events: auto;
+    }
+
+    .about-overlay-info h1 {
+        margin: 0 0 16px 0;
+        font-size: 2.2rem;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .about-overlay-info p {
+        margin: 0 0 8px 0;
+        font-size: 1.15rem;
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+        line-height: 1.45;
+    }
+
+    .about-info {
+        display: none;
+    }
+}
+
+/* Responsive at 800px - smaller height, smaller font */
+@media (max-width: 800px) {
+
+
+    .about-overlay-info {
+        padding: 30px 24px;
+    }
+
+    .about-overlay-info h1 {
+        font-size: 1.9rem;
+    }
+
+    .about-overlay-info p {
+        font-size: 1rem;
+    }
+
+    .about-image {
+        width: 100%;
+        min-width: 0;
+        aspect-ratio: 3 / 4;
+        height: 520px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+}
+
+/* Responsive at 600px - more compact and smaller text */
+@media (max-width: 600px) {
+    .about-container {
+        padding: 35px 35px;
+        min-height: auto;
+        max-width: 100%;
+
+    }
+
+    .about-card {
+        flex-direction: column;
+        min-height: auto;
+        border-radius: 12px;
+        width: 300px;
+    }
+
+
+
+    .about-overlay-info {
+        padding: 20px 20px;
+    }
+
+    .about-overlay-info h1 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .about-overlay-info p {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    .about-image {
+        width: 100%;
+        min-width: 0;
+        aspect-ratio: 3 / 4;
+        height: 480px;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+}

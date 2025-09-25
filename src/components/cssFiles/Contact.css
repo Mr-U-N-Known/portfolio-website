@@ -1,0 +1,126 @@
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.mainForm div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mainForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.mainForm input[type="text"],
+.mainForm input[type="email"],
+.mainForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+
+.mainForm br {
+    display: none;
+}
+
+
+
+.mainForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.mainForm input:focus,
+.mainForm textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+
+.mainForm input[type="submit"] {
+    cursor: pointer;
+    background: #00ffff;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+
+.mainForm input[type="submit"]:hover {
+    background: #00e5e5;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+input[type="submit"]:disabled {
+    background: rgba(128, 128, 128, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: none;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+}
+
+
+input[type="submit"]:disabled:hover {
+    transform: none;
+    box-shadow: none;
+    background: gray;
+
+}
+
+@media (max-width: 600px) {
+    .mainForm {
+        padding: 25px;
+    }
+
+    .contact-container h2 {
+        font-size: 2rem;
+    }
+}
