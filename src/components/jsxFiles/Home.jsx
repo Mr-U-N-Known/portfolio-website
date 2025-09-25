@@ -7,7 +7,7 @@ export default function Home() {
       <div className="container-content">
         <video
           className="bg-video"
-          src="/Portfolio Background.mp4"
+          src="https://res.cloudinary.com/dvmza0bh0/video/upload/v1758799213/Portfolio_Background_zzuci9.mp4"
           autoPlay
           loop
           muted
