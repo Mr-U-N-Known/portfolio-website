@@ -71,7 +71,7 @@ export default class Contact extends Component {
     return (
       <>
         <div className="contact-container">
-          <h2>Contact Me</h2>
+          <h3>Contact Me</h3>
           <form className="mainForm" ref={this.form} onSubmit={this.sendEmail}>
             <div>
               <label>Name</label>
