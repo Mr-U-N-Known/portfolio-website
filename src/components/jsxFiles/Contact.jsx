@@ -72,7 +72,8 @@ export default class Contact extends Component {
       <>
         <SEO title="Contact Page" description="This is contact page." />
         <div className="contact-container">
-          <h2>Contact Me</h2>
+          <h3>Contact Me</h3>
+          <br/>
           <form className="mainForm" ref={this.form} onSubmit={this.sendEmail}>
             <div>
               <label>Name</label>
