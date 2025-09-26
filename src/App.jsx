@@ -9,6 +9,8 @@ import Skills from "./components/jsxFiles/Skills";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { Component } from "react";
 
+import { HelmetProvider } from "react-helmet-async";
+
 export default class App extends Component {
   componentDidMount() {
     if (window.location.pathname !== "/") {
@@ -18,7 +20,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <>
+      <HelmetProvider>
         <Router basename="/">
           <Navbar />
           <Routes>
@@ -29,7 +31,7 @@ export default class App extends Component {
             <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </Router>
-      </>
+      </HelmetProvider>
     );
   }
 }

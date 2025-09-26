@@ -5,6 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div id="about">
+        <SEO title="About Page" description="This is about page." />
         <section className="about-container d-flex flex-column ">
           <div>
             <h2>About Me</h2>

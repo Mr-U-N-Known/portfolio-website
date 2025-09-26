@@ -97,6 +97,7 @@ const SkillsInfoSection = () => {
 export default function Skills() {
   return (
     <>
+      <SEO title="Skills Page" description="This is skills page." />
       <div className="Skill-top" id="skills"></div>
       <div className="skills-component">
         <h2 className="skills-title">My Skills</h2>

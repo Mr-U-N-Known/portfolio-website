@@ -12,6 +12,7 @@ export default function Navbar() {
 
   return (
     <>
+      <SEO title="Navbar Page" description="This is navbar page." />
       <nav className="Navbar-outer">
         <div className={`nav-div ${btnClick === true ? "Clicked" : ""}`}>
           <div className="lable">

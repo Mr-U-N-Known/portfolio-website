@@ -1,9 +1,13 @@
 import React from "react";
 import "../cssFiles/Home.css";
 
+import { Helmet } from "react-helmet-async";
+import SEO from "./SEO";
+
 export default function Home() {
   return (
     <div className="container-home-outer">
+      <SEO title="Home Page" description="This is home page." />
       <div className="container-content">
         <video
           className="bg-video"

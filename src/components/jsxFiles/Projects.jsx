@@ -95,6 +95,7 @@ const projects = [
 export default function Projects() {
   return (
     <section className="projects-section" id="projects">
+      <SEO title="Projects Page" description="This is projects page." />
       <div className="projects-title">
         <h2>My Projects</h2>
         <p>click on projects to learn more...</p>

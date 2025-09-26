@@ -70,6 +70,7 @@ export default class Contact extends Component {
   render() {
     return (
       <>
+        <SEO title="Contact Page" description="This is contact page." />
         <div className="contact-container">
           <h2>Contact Me</h2>
           <form className="mainForm" ref={this.form} onSubmit={this.sendEmail}>
