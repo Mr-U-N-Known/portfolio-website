@@ -1,7 +1,6 @@
 import React from "react";
 import "../cssFiles/Home.css";
 
-import { Helmet } from "react-helmet-async";
 import SEO from "./SEO";
 
 export default function Home() {

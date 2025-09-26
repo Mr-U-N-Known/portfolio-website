@@ -2,6 +2,8 @@ import React from "react";
 import Card from "./Card";
 import "../cssFiles/Projects.css";
 
+import SEO from "./SEO";
+
 const projects = [
   {
     id: 1,

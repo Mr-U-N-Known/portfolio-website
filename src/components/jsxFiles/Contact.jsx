@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import emailjs from "@emailjs/browser";
 import "../cssFiles/Contact.css";
 
+import SEO from "./SEO";
+
 export default class Contact extends Component {
   constructor(props) {
     super(props);
@@ -73,7 +75,7 @@ export default class Contact extends Component {
         <SEO title="Contact Page" description="This is contact page." />
         <div className="contact-container">
           <h3>Contact Me</h3>
-          <br/>
+          <br />
           <form className="mainForm" ref={this.form} onSubmit={this.sendEmail}>
             <div>
               <label>Name</label>

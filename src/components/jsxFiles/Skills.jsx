@@ -1,5 +1,6 @@
 import React from "react";
 import "../cssFiles/Skills.css";
+import SEO from "./SEO";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

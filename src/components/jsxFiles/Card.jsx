@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../cssFiles/Card.css";
 
+import SEO from "./SEO";
+
 export default function Card({ imgSrc, alt, title, description, onClick }) {
   return (
     <div className="card" onClick={onClick}>

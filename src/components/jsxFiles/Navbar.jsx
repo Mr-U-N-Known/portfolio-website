@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../cssFiles/Navbar.css";
 import { Link } from "react-router-dom";
 
+import SEO from "./SEO";
+
 export default function Navbar() {
   let [active, setActive] = useState("Home");
   let [btnClick, setBtnclick] = useState(false);

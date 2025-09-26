@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../cssFiles/About.css";
 
+import SEO from "./SEO";
+
 export default class About extends Component {
   render() {
     return (
