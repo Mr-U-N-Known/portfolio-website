@@ -20,9 +20,8 @@ export default class About extends Component {
                 <div className="about-overlay-info">
                   <h1>Aditya Chakre</h1>
                   <p>
-                    Junior Java Full Stack Developer who crafts scalable
-                    solutions and transforms complex problems into seamless user
-                    experiences.
+                    Software Developer who crafts scalable solutions and
+                    transforms complex problems into seamless user experiences.
                   </p>
                   <p>Adventure awaits - let's make it happen!</p>
                   <br />
@@ -40,8 +39,8 @@ export default class About extends Component {
             <div className="about-info">
               <h1>Aditya Chakre</h1>
               <p>
-                Junior Java Full Stack Developer who crafts scalable solutions
-                and transforms complex problems into seamless user experiences.
+                Software Developer who crafts scalable solutions and transforms
+                complex problems into seamless user experiences.
               </p>
               <p>
                 Ready to turn your vision into something extraordinary.
